@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08110c">
+  <meta name="description" content="The GreenLeaf Society — a premium cannabis-inspired catalogue and community website.">
+  <title>The GreenLeaf Society</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">THE GREENLEAF SOCIETY <span>•</span> CULTURE • COMMUNITY • KNOWLEDGE</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="The GreenLeaf Society home">
+      <span class="leafmark">✳</span>
+      <span><strong>The GreenLeaf</strong><small>SOCIETY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#collection">Collection</a>
+      <a href="#about">Our ethos</a>
+      <a href="#delivery">Delivery info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="openCart">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A considered cannabis culture</p>
+        <h1>Find your<br><em>own green.</em></h1>
+        <p class="hero-text">A premium, plant-inspired space for grown-up conversations, responsible choices and quality information.</p>
+        <a class="primary-button" href="#collection">Explore the catalogue <span>↗</span></a>
+        <p class="fineprint">Adults only. Product availability and any commercial activity are subject to South African law.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract botanical green leaf artwork">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="plant-art"><span>✳</span><span>✳</span><span>✳</span></div>
+        <div class="art-caption">GROW WITH INTENTION<br><b>THE GREENLEAF SOCIETY</b></div>
+      </div>
+    </section>
+
+    <section class="notice" aria-label="Legal notice">
+      <span class="notice-icon">ⓘ</span>
+      <p><strong>Catalogue demo — not a checkout for THC sales.</strong> This starter site does not accept payment or arrange cannabis sales. South African rules distinguish private adult use from commercial dealing; confirm the current legal position and any applicable authorisations before offering products for sale.</p>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE EDIT</p><h2>Explore the catalogue</h2></div>
+        <span class="count-label">03 COLLECTIONS</span>
+      </div>
+      <div class="filters" role="group" aria-label="Filter catalogue">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="education">Plant knowledge</button>
+        <button class="filter" data-filter="accessories">Accessories</button>
+        <button class="filter" data-filter="apparel">Lifestyle</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="education">
+          <div class="product-image botanical"><span>01</span><b>BOTANICAL<br>JOURNAL</b><i>✳</i></div>
+          <div class="product-info"><div class="product-kicker">FIELD NOTES</div><h3>Plant Knowledge Guide</h3><p>Learn about plant care, terminology and responsible use.</p><div class="product-bottom"><span>Read more</span><button class="add-button" data-info="Plant Knowledge Guide">View details ↗</button></div></div>
+        </article>
+        <article class="product-card" data-category="accessories">
+          <div class="product-image accessory"><span>02</span><div class="jar"></div><b>EVERYDAY<br>OBJECTS</b></div>
+          <div class="product-info"><div class="product-kicker">ACCESSORIES</div><h3>Storage & Care</h3><p>A placeholder collection for lawful accessories, subject to local rules.</p><div class="product-bottom"><span>Catalogue item</span><button class="add-button" data-info="Storage & Care">View details ↗</button></div></div>
+        </article>
+        <article class="product-card" data-category="apparel">
+          <div class="product-image apparel"><span>03</span><b>GREENLEAF<br>ESSENTIALS</b><div class="shirt">G.</div></div>
+          <div class="product-info"><div class="product-kicker">LIFESTYLE</div><h3>Society Essentials</h3><p>Minimal, plant-inspired lifestyle goods and brand concepts.</p><div class="product-bottom"><span>Catalogue item</span><button class="add-button" data-info="Society Essentials">View details ↗</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-mark">✳</div>
+      <div><p class="eyebrow">OUR ETHOS</p><h2>Rooted in respect.<br><em>Growing with care.</em></h2></div>
+      <p>We believe good culture starts with clear information, responsible choices and respect for the law. The GreenLeaf Society is a concept brand built around plant knowledge, community and considered design.</p>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+      <div><p class="eyebrow">BEFORE YOU ORDER</p><h2>Delivery & availability</h2><p>This demo does not take orders or dispatch cannabis. For any lawful non-controlled goods, add your real delivery zones, fees, timeframes, returns policy and contact details before publishing.</p></div>
+      <div class="delivery-points"><p><span>01</span> Confirm product legality</p><p><span>02</span> Check any licence or authorisation requirements</p><p><span>03</span> Publish accurate delivery and returns terms</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Connect with the Society.</h2><p>Questions about the brand or catalogue? Contact us on WhatsApp.</p></div>
+      <a class="whatsapp-button" id="whatsappLink" href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp ↗</a>
+      <p class="small-note">Replace the placeholder WhatsApp number in <code>script.js</code> before using this link.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="leafmark">✳</span><span><strong>The GreenLeaf</strong><small>SOCIETY</small></span></a><p>© <span id="year"></span> The GreenLeaf Society. Demo website.</p><p class="footer-legal">Adults only • No unlawful sales • South Africa</p></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Catalogue bag" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Saved items</h2></div><button id="closeCart" aria-label="Close bag">✕</button></div>
+    <p class="cart-explainer">This is a demo saved-items bag only. It does not place orders, take payment, or arrange cannabis delivery.</p>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is empty.</p></div>
+    <button class="primary-button full" id="clearCart">Clear saved items</button>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
